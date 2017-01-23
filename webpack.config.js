@@ -14,7 +14,8 @@ config = {
 	},
 	output: {
 		path: path.join(__dirname, '/public'),
-		filename: '/js/[name].min.js'	// possible options: [name], [hash], [chunkhash]
+		filename: '/js/[name].min.js',	// possible options: [name], [hash], [chunkhash]
+		publicPath: './public'
 	},
 	resolve: {
 		// you can now "require('file')" instead of "require('file.js')"
@@ -70,6 +71,19 @@ config = {
 						}
 					]
 				})
+			},
+			/*{
+				test: /\.jpg$/,
+				loader: 'url-loader'
+			},*/
+			/*{
+				test: /\.(jpe?g|png|gif|svg)$/i,
+				loader: 'file-loader?name=/img/[name].[ext]'
+			}*/
+			{
+				test: /\.(png|jpg)$/i,
+	            loader: 'file-loader?emitFile=false&name=/img/[name].[ext]',
+	            include: path.join(__dirname, '/src/img')
 			}
 		]
 	},
