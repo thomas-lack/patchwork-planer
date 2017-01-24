@@ -1,7 +1,7 @@
 const patternSelect = (state = 'p1', action) => {
 	switch (action.type) {
 		case 'SELECT_PATTERN':
-			return action.patternId;
+			return action.id;
 		default:
 			return state;
 	}
