@@ -65,24 +65,18 @@ config = {
 							query: {
 								sourceMap: true,
 								modifyVars: {
-									'@icon-url': '\'/fonts/iconfont\''
+									'@icon-url': '\'/fonts/iconfont\'',
+									'@image-url': '\'/img/\''
 								}
 							}
 						}
 					]
 				})
 			},
-			/*{
-				test: /\.jpg$/,
-				loader: 'url-loader'
-			},*/
-			/*{
-				test: /\.(jpe?g|png|gif|svg)$/i,
-				loader: 'file-loader?name=/img/[name].[ext]'
-			}*/
+			// include images
 			{
 				test: /\.(png|jpg)$/i,
-	            loader: 'file-loader?emitFile=false&name=/img/[name].[ext]',
+	            loader: 'file-loader?name=/img/[name].[ext]',
 	            include: path.join(__dirname, '/src/img')
 			}
 		]

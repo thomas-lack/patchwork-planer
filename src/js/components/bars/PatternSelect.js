@@ -1,14 +1,29 @@
 import React from 'react';
 import Pattern from './Pattern';
 
-const PatternSelect = () => {
-	return (
-		<div>
-			<h3>Select a pattern</h3>
-			<Pattern image="p1" />
-			<Pattern image="p2" />
-		</div>
-	);
-};
+class PatternSelect extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			active: 'p1',
+			patternMax: 5
+		};
+	}
+
+	render() {
+		return (
+			<div>
+				<h3>Select a pattern</h3>
+				{[...Array(this.state.patternMax)].map((x, i) =>
+					<Pattern
+						key={'p' + (i + 1)}
+						image={'p' + (i + 1)}
+						active={this.state.active === 'p' + (i + 1)}
+					/>
+				)}
+			</div>
+		);
+	}
+}
 
 export default PatternSelect;
