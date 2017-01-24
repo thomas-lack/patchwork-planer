@@ -7,17 +7,18 @@ const mapStateToProps = (state) => {
 		size: {
 			columns: state.patchworkSize.columns,
 			rows: state.patchworkSize.rows
-		}
+		},
+		pattern: state.patternSelect
 	};
 };
 
 const mapDispatchToProps = (dispatch) => {
 	return {
 		onColumnsChange: (columns) => {
-			dispatch(setColumns(columns));
+			dispatch(setColumns(Math.max(1, parseInt(columns))));
 		},
 		onRowsChange: (rows) => {
-			dispatch(setRows(rows));
+			dispatch(setRows(Math.max(1, parseInt(rows))));
 		}
 	};
 };

@@ -1,4 +1,4 @@
-const patchworkSize = (state = {columns:5, rows:10}, action) => {
+const patchworkSize = (state = {columns:6, rows:8}, action) => {
 	switch (action.type) {
 		case 'SET_COLUMNS':
 			return Object.assign({}, state, {columns: action.columns});
