@@ -1,2 +1,2 @@
-# patchwork-planer
+# patchwork-planner
 Patchwork blanket pattern planer

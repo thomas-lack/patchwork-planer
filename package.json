@@ -1,7 +1,7 @@
 {
-  "name": "patchwork-planer",
+  "name": "patchwork-planner",
   "version": "1.0.0",
-  "description": "Patchwork blanket pattern planer",
+  "description": "Patchwork blanket pattern planner",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/eslint *.js src/",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/thomas-lack/patchwork-planer.git"
+    "url": "https://github.com/thomas-lack/patchwork-planner.git"
   },
   "keywords": [
     "react",
@@ -21,9 +21,9 @@
   "author": "Thomas Lack",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thomas-lack/patchwork-planer/issues"
+    "url": "https://github.com/thomas-lack/patchwork-planner/issues"
   },
-  "homepage": "https://github.com/thomas-lack/patchwork-planer#readme",
+  "homepage": "https://github.com/thomas-lack/patchwork-planner#readme",
   "devDependencies": {
     "babel-core": "^6.22.1",
     "babel-eslint": "^7.1.1",
