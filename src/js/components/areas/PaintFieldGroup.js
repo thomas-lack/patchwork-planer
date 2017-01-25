@@ -5,7 +5,7 @@ import './styles/field.less';
 const PaintFieldGroup = ({size, onColumnsChange, onRowsChange}) => {
 	return (
 		<div className="paintFieldContainer">
-			<h3>Draw your pattern</h3>
+			<h3>Plan your patchwork pattern</h3>
 			<table className="paintField">
 				<tbody>
 				{[...Array(size.rows)].map((x, i) =>

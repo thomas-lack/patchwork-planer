@@ -5,7 +5,10 @@ import './styles/pattern.less';
 // import image files to enable webpack bundling
 import '../../../img/pattern-1.jpg';
 import '../../../img/pattern-2.jpg';
+import '../../../img/pattern-3.jpg';
+import '../../../img/pattern-4.jpg';
 import '../../../img/pattern-5.jpg';
+import '../../../img/pattern-6.jpg';
 import '../../../img/pattern-7.jpg';
 import '../../../img/pattern-8.jpg';
 
